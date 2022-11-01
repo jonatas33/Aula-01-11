@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <title>Utilizando Switch JS</title>
+</head>
+<body>
+
+   
+ 
+
+
+
+    <script type="text/javascript">
+        var bebida = prompt("Digite a Bebida Desejada").toUpperCase()
+               
+        
+
+        switch(bebida){
+           
+            case "ÁGUA":
+            var agua = Number(window.prompt('Digite 1 para com gás ou 2 para sem gás:'))
+            if (num ==1){
+                document.write("Água com Gás. Preço: R$3,00")
+            } else {
+                var resposta = document.write("Água sem Gás. Preço: R$3,00");
+               
+            }
+            break
+
+
+            case "AGUA":
+            document.write("Preço: R$3,00");
+                break    
+
+            case "REFRIGERANTE":
+            document.write("Preço: R$7,00");
+                break
+               
+             case "SUCO":
+            document.write("Preço: R$4,00");
+                break  
+
+            case "CERVEJA":
+            document.write("Preço: R$8,00");
+                break
+                
+            case "VINHO":
+            document.write("Preço: R$8,00");
+                break
+
+            default: 
+            document.write("Bebida indisponível");
+
+        }
+
+        var res = document.querySelector('section#result')
+            res.innerHTML = `<p>Você escolheu ${resposta}!</p>`
+
+       
+
+
+    </script>
+    
+</body>
+</html>
